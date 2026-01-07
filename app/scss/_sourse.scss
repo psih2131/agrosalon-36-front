@@ -35,38 +35,6 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid slategrey;
 }
 
-.slick-slide img:focus {
-	outline: none !important;
-}
-
-.slick-slide:focus {
-	outline: none !important;
-}
-
-.towar-box-sec5 a {
-	outline: none !important;
-}
-
-.slick-slide {
-	outline: none !important;
-}
-
-.slick-slide p {
-	outline: none !important;
-}
-
-.slick-slide a {
-	outline: none !important;
-}
-
-.slick-slide div {
-	outline: none !important;
-}
-
-.slick-track {
-	outline: none !important;
-}
-
 input {
 	outline: 0 none !important;
 
@@ -118,9 +86,14 @@ textarea {
 	font-family: $mainFont;
 }
 
+svg {
+	shape-rendering: geometricPrecision;
+}
+
 body {
-	background: #fff;
+	background: $white2;
 	font-family: $mainFont;
+	color: $black1;
 }
 
 h1,
@@ -141,17 +114,14 @@ ul {
 	min-width: 260px;
 }
 
-.main-wrapper {
-	width: 1140px;
+.container {
+	width: 1100px;
 	margin: 0 auto;
+
 }
 
 
 
-@media only screen and (max-width: 1200px) {
-	
-}
+@media only screen and (max-width: 1200px) {}
 
-@media only screen and (max-width: 650px) {
-	
-}
+@media only screen and (max-width: 650px) {}
