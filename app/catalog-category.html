@@ -251,7 +251,7 @@
         </header>
 
         <main class="main">
-            <div class="catalog-category-sec">
+            <section class="catalog-category-sec">
                 <div class="container">
                     <div class="bread-crumbs">
                         <a href="" class="bread-crumbs__link">Главная /</a>
@@ -273,6 +273,224 @@
 
                     <div class="catalog-category-sec__body">
                         <aside class="catalog-category-sec__aside category-filtrs">
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">По цене</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    <div class="price-range-element">
+                                        <div class="price-range-element__row-title">
+                                            <p class="price-range-element__text">От</p>
+                                            <p class="price-range-element__text">До</p>
+                                        </div>
+
+                                        <div class="price-input">
+                                            <div class="field">
+                                                <input type="text" class="input-min" value="2500" placeholder="0">
+                                            </div>
+
+                                            <div class="separator"></div>
+
+                                            <div class="field">
+                                                <input type="text" class="input-max" value="7500" placeholder="10000">
+                                            </div>
+                                        </div>
+
+                                        <div class="slider">
+                                            <div class="progress"></div>
+                                        </div>
+
+                                        <div class="range-input">
+                                            <input type="range" class="range-min" min="0" max="10000" value="2500"
+                                                step="100">
+                                            <input type="range" class="range-max" min="0" max="10000" value="7500"
+                                                step="100">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">По бренду</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+                                    <div class="filtr-search acordeon__search">
+                                        <input type="text" class="filtr-search__input" placeholder="Поиск">
+                                        <div class="filtr-search__btn-search">
+                                            <img src="img/_src/icon/search.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="filtr-checkbox-container">
+                                        <!-- Группа чекбоксов -->
+                                        <fieldset class="checkbox-group" role="group">
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-1" name="colors"
+                                                    value="indigo">
+                                                <label for="color-1" class="checkbox-label">Solis-Gold
+                                                    <span>321</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-2" name="colors"
+                                                    value="indigo">
+                                                <label for="color-2" class="checkbox-label">John Deere
+                                                    <span>124</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-3" name="colors"
+                                                    value="indigo">
+                                                <label for="color-3" class="checkbox-label">Kubota
+                                                    <span>68</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-4" name="colors"
+                                                    value="indigo">
+                                                <label for="color-4" class="checkbox-label">Belarus
+                                                    <span>10</span></label>
+                                            </div>
+
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-5" name="colors"
+                                                    value="indigo">
+                                                <label for="color-5" class="checkbox-label">Solis-Gold
+                                                    <span>321</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-6" name="colors"
+                                                    value="indigo">
+                                                <label for="color-6" class="checkbox-label">John Deere
+                                                    <span>124</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-7" name="colors"
+                                                    value="indigo">
+                                                <label for="color-7" class="checkbox-label">Kubota
+                                                    <span>68</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-8" name="colors"
+                                                    value="indigo">
+                                                <label for="color-8" class="checkbox-label">Belarus
+                                                    <span>10</span></label>
+                                            </div>
+
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-9" name="colors"
+                                                    value="indigo">
+                                                <label for="color-9" class="checkbox-label">Solis-Gold
+                                                    <span>321</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-10"
+                                                    name="colors" value="indigo">
+                                                <label for="color-10" class="checkbox-label">John Deere
+                                                    <span>124</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-11"
+                                                    name="colors" value="indigo">
+                                                <label for="color-11" class="checkbox-label">Kubota
+                                                    <span>68</span></label>
+                                            </div>
+
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" class="checkbox-input" id="color-12"
+                                                    name="colors" value="indigo">
+                                                <label for="color-12" class="checkbox-label">Belarus
+                                                    <span>10</span></label>
+                                            </div>
+
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">По мощности</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis
+                                    blanditiis ad doloribus voluptates quae nulla voluptatem, quos accusantium cum sunt
+                                    expedita perspiciatis dolor. Enim voluptates quidem nemo quisquam totam?
+
+                                </div>
+                            </div>
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">Тракторы</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis
+                                    blanditiis ad doloribus voluptates quae nulla voluptatem, quos accusantium cum sunt
+                                    expedita perspiciatis dolor. Enim voluptates quidem nemo quisquam totam?
+
+                                </div>
+                            </div>
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">Минитракторы</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis
+                                    blanditiis ad doloribus voluptates quae nulla voluptatem, quos accusantium cum sunt
+                                    expedita perspiciatis dolor. Enim voluptates quidem nemo quisquam totam?
+
+                                </div>
+                            </div>
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">Навесное оборудование</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis
+                                    blanditiis ad doloribus voluptates quae nulla voluptatem, quos accusantium cum sunt
+                                    expedita perspiciatis dolor. Enim voluptates quidem nemo quisquam totam?
+
+                                </div>
+                            </div>
+
+                            <div class="category-filtrs__acordeon filtr-acordeon">
+                                <div class="filtr-acordeon__header">
+                                    <p class="filtr-acordeon__header-name">Запчасти</p>
+                                    <img src="img/_src/icon/arrow-acordeon.svg" alt="" class="filtr-acordeon__arrow">
+                                </div>
+                                <div class="filtr-acordeon__body">
+
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, perferendis
+                                    blanditiis ad doloribus voluptates quae nulla voluptatem, quos accusantium cum sunt
+                                    expedita perspiciatis dolor. Enim voluptates quidem nemo quisquam totam?
+
+                                </div>
+                            </div>
 
                         </aside>
                         <div class="catalog-category-sec__products-wrapper">
@@ -1203,13 +1421,149 @@
                                     </a>
                                 </div>
                             </div>
+
+                            <div class="pagination pagination--catalog">
+                                <a href="" class="pagination__arrow pagination__arrow--prev">
+                                    <img src="img/_src/icon/arrow.svg" alt="" class="pagination__arrow-icon">
+                                </a>
+                                <ul class="pagination__pages-nambers">
+                                    <li class="pagination__page-element active">
+                                        <a href="" class="pagination__page-link">1</a>
+                                    </li>
+                                    <li class="pagination__page-element">
+                                        <a href="" class="pagination__page-link">2</a>
+                                    </li>
+                                    <li class="pagination__page-element">
+                                        <a href="" class="pagination__page-link">3</a>
+                                    </li>
+                                    <li class="pagination__page-element">
+                                        <a href="" class="pagination__page-link">4</a>
+                                    </li>
+                                </ul>
+                                <a href="" class="pagination__arrow pagination__arrow--next">
+                                    <img src="img/_src/icon/arrow.svg" alt="" class="pagination__arrow-icon">
+                                </a>
+                            </div>
                         </div>
                     </div>
 
 
 
                 </div>
-            </div>
+            </section>
+
+            <section class="form-sec">
+                <img src="img/_src/form-border.png" alt="" class="form-sec__border-top">
+
+                <div class="form-sec__wrapper">
+                    <img src="img/_src/form-bg.jpg" alt="" class="form-sec__bg-img">
+                    <img src="img/_src/form-image.png" alt="" class="form-sec__traktor-img">
+
+                    <div class="container">
+                        <div class="form-sec__form-claster">
+                            <h2 class="form-sec__title">Оставить заявку</h2>
+                            <p class="form-sec__subtitle">Заполните форму — мы свяжемся с вами, ответим на вопросы и
+                                поможем с выбором техники.</p>
+
+                            <div class="form-sec__form-wrapper">
+                                <div class="form-input">
+                                    <input type="text" placeholder="Ваше имя *">
+                                </div>
+
+                                <div class="form-input">
+                                    <input type="text" placeholder="Ваш телефон *">
+                                </div>
+
+                                <div class="form-input">
+                                    <input type="text" placeholder="Ваш E-mail *">
+                                </div>
+                                <div class="form__confirm-row">
+                                    <label class="container-checkbox">
+                                        Я согласен на получение новостных и рекламных материалов
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-btn-wrapper">
+                                    <a href="" class="btnV1">
+                                        <span class="btnV1__text">Оставить заявку</span>
+                                        <span class="btnV1__icon-wrapper">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#F07F0E"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/_src/form-border.png" alt="" class="form-sec__border-down">
+            </section>
+
+            <section class="seo-sec catalog-category-seo-sec">
+                <div class="container">
+                    <div class="sec-header-row">
+                        <h2 class="sec-title">Покупайте сельхозтехнику выгодно и с гарантией</h2>
+                    </div>
+
+                    <div class="seo-sec__wrapepr">
+                        <div class="seo-sec__text">
+                            <div class="text-editor">
+                                <p>Интернет-магазин Agrosalon36 предлагает широкий выбор сельскохозяйственной техники,
+                                    навесного оборудования и запчастей для частных хозяйств, фермеров и предприятий. В
+                                    нашем каталоге представлены минитрактора, полноценные тракторы, почвообрабатывающая
+                                    техника, прицепы, а также комплектующие и расходные материалы от проверенных
+                                    брендов.</p>
+                                <p>Мы отбираем только надёжные модели, которые показывают стабильную работу и
+                                    выдерживают высокие нагрузки в реальных условиях эксплуатации.</p>
+                                <h3>Как мы работаем</h3>
+                                <p>Agrosalon36 обеспечивает доставку по всей России, консультации специалистов и
+                                    гарантийное обслуживание. Мы стремимся предоставить клиентам комплексное решение —
+                                    от подбора оборудования до его дальнейшей поддержки. Если вам требуется помощь в
+                                    выборе или консультация, наши менеджеры всегда готовы помочь и предложить
+                                    оптимальный вариант под ваши задачи.</p>
+                            </div>
+                        </div>
+                        <div class="seo-sec__dop-info">
+                            <div class="seo-sec__advantages">
+                                <p class="seo-sec__advantages-title">Наши достоинства</p>
+                                <ul class="seo-sec__advantages-list">
+                                    <li class="seo-sec__advantages-li">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.375 9.6875C19.375 15.0391 15 19.375 9.6875 19.375C4.33594 19.375 0 15.0391 0 9.6875C0 4.375 4.33594 0 9.6875 0C15 0 19.375 4.375 19.375 9.6875ZM8.55469 14.8438L15.7422 7.65625C15.9766 7.42188 15.9766 6.99219 15.7422 6.75781L14.8438 5.89844C14.6094 5.625 14.2188 5.625 13.9844 5.89844L8.125 11.7578L5.35156 9.02344C5.11719 8.75 4.72656 8.75 4.49219 9.02344L3.59375 9.88281C3.35938 10.1172 3.35938 10.5469 3.59375 10.7812L7.65625 14.8438C7.89062 15.0781 8.32031 15.0781 8.55469 14.8438Z"
+                                                fill="#F07F0E" />
+                                        </svg>
+                                        <span class="seo-sec__advantages-li-text">
+                                            Низкая стоимость услуги (в сравнении с авиационными и наземными перевозками)
+                                        </span>
+
+                                    </li>
+
+                                    <li class="seo-sec__advantages-li">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M19.375 9.6875C19.375 15.0391 15 19.375 9.6875 19.375C4.33594 19.375 0 15.0391 0 9.6875C0 4.375 4.33594 0 9.6875 0C15 0 19.375 4.375 19.375 9.6875ZM8.55469 14.8438L15.7422 7.65625C15.9766 7.42188 15.9766 6.99219 15.7422 6.75781L14.8438 5.89844C14.6094 5.625 14.2188 5.625 13.9844 5.89844L8.125 11.7578L5.35156 9.02344C5.11719 8.75 4.72656 8.75 4.49219 9.02344L3.59375 9.88281C3.35938 10.1172 3.35938 10.5469 3.59375 10.7812L7.65625 14.8438C7.89062 15.0781 8.32031 15.0781 8.55469 14.8438Z"
+                                                fill="#F07F0E" />
+                                        </svg>
+                                        <span class="seo-sec__advantages-li-text">
+                                            Безопасность транспортировки товаров
+                                        </span>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <img src="img/_src/seo-sec-img.jpg" alt="" class="seo-sec__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
 

@@ -1,0 +1,113 @@
+.price-range-element__row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.price-range-element__text {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.price-input {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+.price-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.field {
+    display: flex;
+    width: 114px;
+    align-items: center;
+
+    input {
+        width: 100%;
+        border-radius: 100px;
+        border: solid 1px rgba(34, 40, 43, 0.2);
+        padding: 8px 20px;
+        color: $black1;
+        font-size: 14px;
+        -moz-appearance: textfield;
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+}
+
+.input-max {
+    text-align: right;
+}
+
+.separator {
+    width: 20px;
+    height: 1px;
+    background: rgba(34, 40, 43, 0.2);
+}
+
+
+.slider {
+    height: 5px;
+    position: relative;
+    background: #CECECE;
+    border-radius: 5px;
+}
+
+.slider .progress {
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #22282B;
+}
+
+.range-input {
+    position: relative;
+
+    input {
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        top: -5px;
+        background: none;
+        pointer-events: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        background: #22282B;
+        pointer-events: auto;
+        -webkit-appearance: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    }
+
+    input[type="range"]::-moz-range-thumb {
+        height: 17px;
+        width: 17px;
+        border: none;
+        border-radius: 50%;
+        background: #22282B;
+        pointer-events: auto;
+        -moz-appearance: none;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    }
+}
