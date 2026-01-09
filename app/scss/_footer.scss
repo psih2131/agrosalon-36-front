@@ -1,0 +1,147 @@
+.footer {
+    background: $black1;
+
+    .container {
+        position: relative;
+    }
+
+}
+
+.footer__down {
+    border-top: solid 1px rgba(118, 139, 158, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__copy {
+    font-size: 12px;
+    line-height: 1;
+    color: $white1;
+    opacity: 0.5;
+}
+
+.footer__down-nav-ul {
+    display: flex;
+
+}
+
+.footer__down-nav-li {
+    font-size: 12px;
+    line-height: 1;
+    margin-left: 37px;
+
+}
+
+.footer__down-nav-link {
+    color: $white1;
+    opacity: 0.5;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__left {
+    width: 260px;
+
+    .search-component {
+        width: 100%;
+    }
+}
+
+.footer__logo {
+    width: 157px;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.footer__logo-img {
+    width: 100%;
+    display: block;
+}
+
+.footer__nav-li {
+    font-size: 14px;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__nav-link {
+    color: $white1;
+}
+
+.footer__claster {
+    max-width: 170px;
+}
+
+.footer__contacts {
+    max-width: 220px;
+}
+
+.footer__title {
+    font-size: 14px;
+    margin-bottom: 16px;
+    color: $white1;
+    opacity: 0.5;
+}
+
+.footer__contacts-data-element {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+
+    svg {
+        display: block;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.footer__contacts-data-element-text {
+    color: $white1;
+    width: calc(100% - 24px);
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.footer__social-row {
+    display: flex;
+    margin-top: 20px;
+
+    .header__social-link {
+        margin-left: 0;
+        margin-right: 6px;
+    }
+}
+
+.footer__phone {
+    font-size: 15px;
+    margin-top: 12px;
+    font-weight: 600;
+    color: $white1;
+    display: inline-block;
+}
+
+.footer__bg-logo {
+    position: absolute;
+    z-index: 1;
+    width: 742px;
+    display: block;
+    left: 50%;
+    bottom: -30px;
+    opacity: 0.02;
+}

@@ -31,8 +31,43 @@
 // });
 
 
-window.addEventListener('load', function () {
+document.addEventListener("DOMContentLoaded", () => {
+    var swiper = new Swiper(".popular-products-slider", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        speed: 1000,
+        loop: true,
+        navigation: {
+            nextEl: ".popular-swiper-button-next",
+            prevEl: ".popular-swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            300: {
+                slidesPerView: 1,
+                spaceBetween: 0,
 
-}, false);
+                // centeredSlides: true
+            },
+            // when window width is >= 320px
 
+            // when window width is >= 320px
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // when window width is >= 480px
+            1220: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            // when window width is >= 640px
+            1540: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            }
+        }
+
+    });
+})
 

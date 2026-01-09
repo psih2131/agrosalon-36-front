@@ -4,7 +4,17 @@
 @import "mixins";
 
 @import "sourse";
+@import "buttons";
 @import "header";
+
+@import "components/category";
+@import "components/product-card";
+@import "components/text-editor";
+@import "components/pagination";
+
 @import "home";
+@import "catalog";
+@import "catalog-category";
+
 @import "footer";
 @import "popups";

@@ -1,0 +1,88 @@
+.btnV1 {
+
+    background: #F07F0E;
+    box-shadow: inset 0px 8px 18px -2px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.btnV1__text {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+    color: $white1;
+    margin-right: 14px;
+}
+
+.btnV1__icon-wrapper {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: $white1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        display: block;
+    }
+}
+
+
+.btnV2 {
+    background: #F07F0E;
+    box-shadow: inset 0px 8px 18px -2px rgba(255, 255, 255, 0.5);
+    padding: 11px 30px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+    color: $white1;
+
+}
+
+
+.btnV3 {
+    background: radial-gradient(50% 50% at 50% 50%, #F6E5D4 0%, #F6EADD 100%);
+
+    box-shadow: inset 0px 8px 18px -2px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+    padding-left: 45px;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    border: solid 1px $orange1;
+}
+
+
+.btnV3__text {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 500;
+    color: $orange1;
+    margin-right: 29px;
+}
+
+.btnV3__icon-wrapper {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: $orange1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+        display: block;
+    }
+}
