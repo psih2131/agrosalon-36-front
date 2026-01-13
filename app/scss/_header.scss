@@ -11,13 +11,13 @@
 
     .container {
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 }
 
 .header__bg {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     height: calc(100% + 15px);
     bottom: -15px;
     width: auto;
@@ -39,8 +39,9 @@
     font-size: 12px;
     line-height: 1;
 
-    svg {
+    img {
         display: block;
+        width: 16px;
         margin-right: 8px;
     }
 }
@@ -54,6 +55,12 @@
     display: block;
     width: 24px;
     margin: 0 3px;
+    transition: all ease 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all ease 0.3s;
+    }
 }
 
 .header__social-link-img {
@@ -66,6 +73,10 @@
     line-height: 1;
     color: $black1;
     font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+    }
 
 }
 
@@ -95,10 +106,17 @@
     padding: 10px 0;
     font-size: 16px;
     color: $white1;
+    transition: all ease 0.3s;
 
-    svg {
+    img {
         margin-right: 13px;
+        width: 24px;
         display: block;
+    }
+
+    &:hover {
+        background: $green1;
+        transition: all ease 0.3s;
     }
 }
 
@@ -137,6 +155,11 @@
     svg {
         display: block;
     }
+
+    img {
+        display: block;
+        width: 24px;
+    }
 }
 
 .header__store-control-row {
@@ -149,10 +172,27 @@
 
     svg {
         display: block;
+        transition: all ease 0.3s;
+
+        path {
+            transition: all ease 0.3s;
+        }
     }
 
     &:first-child {
         margin-left: 0;
+    }
+
+    &:hover {
+        svg {
+            transition: all ease 0.3s;
+
+            path {
+                stroke: $green1;
+
+                transition: all ease 0.3s;
+            }
+        }
     }
 }
 
@@ -176,6 +216,13 @@
         position: relative;
         z-index: 1;
     }
+}
+
+.search-component__btn-search-img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 24px;
 }
 
 .store-control-element__counter {
@@ -231,6 +278,7 @@
     color: $black1;
     align-items: center;
     position: relative;
+    transition: all ease 0.3s;
 
     &::before {
         width: 1px;
@@ -245,4 +293,245 @@
         margin-right: 10px;
         display: block;
     }
+
+    &:hover {
+        color: $green1;
+        transition: all ease 0.3s;
+    }
+}
+
+.header__nav-link-img {
+    margin-right: 10px;
+    display: block;
+    width: 20px;
+}
+
+.header__contact-info-text-mob {
+    display: none;
+}
+
+.burger-meny {
+    display: none;
+}
+
+.header__mob {
+    display: none;
+}
+
+@media only screen and (max-width: 1150px) {
+    .header__phone {
+        font-size: 14px;
+    }
+
+    .header__contact-info-text-mob {
+        display: inline-block;
+    }
+
+    .header__contact-info-text-pc {
+        display: none;
+    }
+
+    .header__search {
+        width: 305px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .header__top {
+        display: contents;
+
+    }
+
+    .header__center {
+        display: contents;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 12px;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        .header__down {
+            display: none;
+        }
+
+        .header__contact-info--email {
+            display: none;
+        }
+
+        .header__contact-info--time {
+            display: none;
+        }
+
+        .header__social-row {
+            display: none;
+        }
+
+        .header__phone {
+            display: none;
+        }
+
+
+
+        .header__contact-info--adress {
+            width: 100%;
+            margin-bottom: 14px;
+
+        }
+    }
+
+    .burger-meny {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33px;
+        height: 22px;
+        position: relative;
+        order: 6;
+
+        &.active {
+            .burger-meny__line--1 {
+                top: auto;
+                transform: rotate(45deg);
+            }
+
+            .burger-meny__line--2 {
+                opacity: 0;
+            }
+
+            .burger-meny__line--3 {
+                bottom: auto;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .burger-meny__line {
+        position: absolute;
+        width: 33px;
+        height: 2px;
+        border-radius: 2px;
+        background: #000;
+        transition: all ease 0.3s;
+    }
+
+    .burger-meny__line--1 {
+        top: 0;
+    }
+
+    .burger-meny__line--3 {
+        bottom: 0;
+    }
+
+    .header__logo-img {
+        width: 136px;
+        order: 2;
+        margin-bottom: 16px;
+    }
+
+
+    .header__store-control-row {
+        order: 3;
+        margin-bottom: 16px;
+    }
+
+    .header__catalog-link {
+        order: 4;
+    }
+
+    .header__search {
+        order: 5;
+        width: 153px;
+    }
+
+    .store-control-element__name {
+        font-size: 12px;
+    }
+
+    .header__down {
+        order: 6;
+    }
+
+    .header__nav-ul {
+        display: block;
+    }
+
+    .header__mob {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 189px;
+        background: $black1;
+
+    }
+
+    .header__mob-nav {
+        padding-top: 26px;
+    }
+
+    .header__mob-nav-list {
+        columns: 3;
+
+    }
+
+    .header__mob-nav-list-element {
+        margin-bottom: 10px;
+        line-height: auto;
+    }
+
+    .header__mob-link {
+        font-size: 16px;
+        color: $white1;
+
+    }
+
+    .header__mob-contacts {
+        margin-top: 50px;
+    }
+
+    .header__mob-contacts-title {
+        color: $white1;
+        opacity: 0.5;
+        margin-bottom: 16px;
+    }
+
+    .header__mob-contacts-wrapper {
+        .header__contact-info {
+            color: $white1;
+            font-size: 14px;
+            margin: 0;
+            margin-bottom: 12px;
+
+            .header__contact-info-text-pc {
+                display: block;
+            }
+
+            .header__contact-info-text-mob {
+                display: none;
+            }
+        }
+
+        .header__phone {
+            color: $white1;
+            display: inline-block;
+        }
+
+        .header__social-row {
+            padding-top: 8px;
+            margin-bottom: 12px;
+        }
+
+        .header__social-link {
+            margin-left: 0;
+            margin-right: 6px;
+        }
+    }
+
+
 }

@@ -17,3 +17,23 @@
         font-weight: 600;
     }
 }
+
+@media only screen and (max-width: 910px) {
+    .text-editor {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 22px;
+            line-height: 130%;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}

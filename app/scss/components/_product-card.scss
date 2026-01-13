@@ -57,6 +57,12 @@
     }
 }
 
+.product-card__benefits-list-icon-wrapper-img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
 .product-card__benefits-list-text {
     width: calc(100% - 23px);
     padding-left: 12px;
@@ -101,11 +107,23 @@
     cursor: pointer;
     color: $white1;
     font-size: 16px;
+    transition: all ease 0.3s;
 
     svg {
         margin-right: 12px;
         display: block;
     }
+
+    &:hover {
+        background: $green3;
+        transition: all ease 0.3s;
+    }
+}
+
+.cart-btn__img {
+    display: block;
+    width: 24px;
+    margin-right: 12px;
 }
 
 .product-card__info-row {
@@ -155,9 +173,66 @@
 
     svg {
         display: block;
+
+        path {
+            transition: all ease 0.3s;
+            stroke: $black1;
+        }
     }
 
     &:first-child {
         margin-left: 0;
+    }
+
+    &.active {
+        svg {
+            display: block;
+
+            path {
+                stroke: $green1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .product-card__image-wrapper {
+        height: 246px;
+    }
+
+    .product-card {
+        .btnV1 {
+            width: calc(100% - 137px - 15px);
+            padding-left: 0;
+
+            .btnV1__text {
+                width: calc(100% - 35px);
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .product-card__title {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .product-card__image-wrapper {
+        height: 260px;
+    }
+
+    .product-card__title {
+        font-size: 17px;
+        margin-bottom: 18px;
+        line-height: 24px;
+        margin-top: 12px;
+    }
+
+    .cart-btn__img {
+        width: 20px;
     }
 }
