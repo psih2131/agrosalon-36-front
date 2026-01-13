@@ -112,6 +112,119 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    var swiperHistory = new Swiper(".history-products-slider", {
+        slidesPerView: 3,
+        spaceBetween: 0,
+        speed: 1000,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        centeredSlides: true,
+        loop: true,
+        // navigation: {
+        //     nextEl: ".brends-swiper-button-next",
+        //     prevEl: ".brends-swiper-button-prev",
+        // },
+        breakpoints: {
+            // when window width is >= 320px
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 0,
+            },
+
+            910: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            },
+
+            1150: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+            }
+        }
+
+    });
+
+
+    var swiperHistory = new Swiper(".revievs-slider-1", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+
+        loop: true,              // 🔁 бесконечность
+        speed: 6000,             // ⏱️ чем больше — тем медленнее движение
+        allowTouchMove: false,   // 🚫 отключаем свайп
+
+        autoplay: {
+            delay: 0,              // ⬅️ ключевой момент
+            disableOnInteraction: false,
+        },
+        // navigation: {
+        //     nextEl: ".brends-swiper-button-next",
+        //     prevEl: ".brends-swiper-button-prev",
+        // },
+        breakpoints: {
+            // when window width is >= 320px
+            // 300: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 0,
+            // },
+
+            // 910: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 0,
+            // },
+
+            1150: {
+
+                spaceBetween: 20,
+            }
+        }
+
+    });
+
+    var swiperHistory = new Swiper(".revievs-slider-2", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+
+        loop: true,              // 🔁 бесконечность
+        speed: 6000,             // ⏱️ чем больше — тем медленнее движение
+        allowTouchMove: false,   // 🚫 отключаем свайп
+
+
+        autoplay: {
+            delay: 0,              // ⬅️ ключевой момент
+            disableOnInteraction: false,
+            reverseDirection: true,
+        },
+        // navigation: {
+        //     nextEl: ".brends-swiper-button-next",
+        //     prevEl: ".brends-swiper-button-prev",
+        // },
+        breakpoints: {
+            // when window width is >= 320px
+            // 300: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 0,
+            // },
+
+            // 910: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 0,
+            // },
+
+            1150: {
+
+                spaceBetween: 20,
+            }
+        }
+
+    });
+
 
     // мини-превью слайдер
     var swiperThumbs = new Swiper(".product-slider-controll", {
@@ -155,6 +268,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const rangeInput = document.querySelectorAll(".range-input input"), priceInput = document.querySelectorAll(".price-input input"), range = document.querySelector(".slider .progress"); let priceGap = 1000; priceInput.forEach(input => { input.addEventListener("input", e => { let minPrice = parseInt(priceInput[0].value), maxPrice = parseInt(priceInput[1].value); if ((maxPrice - minPrice >= priceGap) && maxPrice <= rangeInput[1].max) { if (e.target.className === "input-min") { rangeInput[0].value = minPrice; range.style.left = ((minPrice / rangeInput[0].max) * 100) + "%"; } else { rangeInput[1].value = maxPrice; range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%"; } } }); }); rangeInput.forEach(input => { input.addEventListener("input", e => { let minVal = parseInt(rangeInput[0].value), maxVal = parseInt(rangeInput[1].value); if ((maxVal - minVal) < priceGap) { if (e.target.className === "range-min") { rangeInput[0].value = maxVal - priceGap } else { rangeInput[1].value = minVal + priceGap; } } else { priceInput[0].value = minVal; priceInput[1].value = maxVal; range.style.left = ((minVal / rangeInput[0].max) * 100) + "%"; range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%"; } }); });
+
+
+
+
+
 
 })
 
