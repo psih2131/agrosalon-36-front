@@ -20,10 +20,33 @@ $(function () {
     $('.product-card-compare').on('click', function () {
         $(this).toggleClass('active')
     })
+
+
 });
 
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    // products tabs
+    const navElements = document.querySelectorAll('.product-about-sec__nav-element')
+    if (navElements?.length > 0) {
+        const tabsElements = document.querySelectorAll('.product-tab')
+
+        navElements.forEach((nav, index) => {
+            nav.addEventListener('click', () => {
+
+                navElements.forEach(el => el.classList.remove('active'))
+                tabsElements.forEach(el => el.classList.remove('active'))
+
+
+                nav.classList.add('active')
+                tabsElements[index].classList.add('active')
+            })
+        })
+    }
+
+
+
     var swiper = new Swiper(".popular-products-slider", {
         slidesPerView: 3,
         spaceBetween: 0,
