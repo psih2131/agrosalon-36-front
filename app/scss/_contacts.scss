@@ -1,0 +1,188 @@
+.contacts-page-sec {
+    padding-top: 182px;
+    padding-bottom: 80px;
+}
+
+.contacts-page-sec__title {
+    font-size: 44px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 33px;
+    margin-top: 30px;
+}
+
+.contact-claster {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact-claster__data {
+    width: 387px;
+}
+
+.contact-claster__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contact-claster__map {
+    width: calc(100% - 387px - 28px);
+    height: 308px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contact-claster__time-work {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 130%;
+    opacity: 0.5;
+}
+
+.contact-claster__location {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.contact-claster__row-contacts {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contact-claster__phone {
+    color: $black1;
+    font-size: 16px;
+    margin-right: 15px;
+    font-weight: 600;
+    display: inline-block;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.contact-claster__socials {
+    display: flex;
+    align-items: center;
+}
+
+.contact-claster__social {
+    display: block;
+    width: 20px;
+    margin-right: 6px;
+    transition: all ease 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all ease 0.3s;
+    }
+}
+
+.contact-claster__social-icon {
+    width: 100%;
+    display: block;
+}
+
+.contact-claster__email {
+    font-size: 16px;
+    line-height: 130%;
+    color: $black1;
+    display: inline-block;
+}
+
+.contact-claster__btn-wrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contact-claster__btn {
+    border: none;
+    color: $white1;
+    background: $green1;
+    border-radius: 100px;
+    padding: 12px 43px;
+    font-size: 16px;
+    transition: all ease 0.3s;
+    font-weight: 500;
+
+    &:hover {
+        background: $green3;
+        transition: all ease 0.3s;
+    }
+}
+
+
+.contacts-page-sec__claster {
+    margin-bottom: 50px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.my-marker {
+    width: 1px;
+    height: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        width: 54px;
+        height: 54px;
+        display: block;
+        background: url('../img/_src/icon/marker-map.png');
+        background-size: cover;
+        background-position: center;
+        top: -54px;
+        position: absolute;
+
+    }
+}
+
+.contacts-page-sec__about-ware-house {
+    margin-top: 80px;
+}
+
+.about-ware-house__title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.about-ware-house {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-ware-house__data {
+    width: 610px;
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.about-ware-house__img {
+    width: 450px;
+    height: 222px;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.form-sec--contact-page {
+    margin-bottom: 80px;
+}
