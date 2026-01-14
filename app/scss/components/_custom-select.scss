@@ -1,0 +1,131 @@
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.select-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.select-header:hover {
+    border-color: #aaa;
+}
+
+.arrow {
+    transition: transform 0.3s;
+    background: url('../../img/_src/icon/ar-select.svg');
+    background-size: cover;
+    background-position: center;
+    width: 14px;
+    height: 8px;
+    display: block;
+}
+
+.select-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.select-options li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.select-options li:hover {
+    background-color: #f5f5f5;
+}
+
+.custom-select.active .select-options {
+    max-height: 300px;
+    border-color: #ddd;
+    border-top: none;
+}
+
+.custom-select.active .arrow {
+    transform: rotate(180deg);
+}
+
+.custom-select.active .select-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.selected-value {
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.consult-service-sec {
+    padding: 80px 0;
+
+    .sec-title {
+        max-width: 650px;
+        margin-bottom: 36px;
+    }
+}
+
+.consult-service-sec__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.consult-service-sec__data {
+    width: 610px;
+}
+
+.consult-service-sec__img {
+    width: 450px;
+    height: 222px;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+}
+
+.video-swiper-button-prev {
+    margin-right: 12px;
+
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+.video-products-slider {
+    .product-tab__video-element {
+        width: 100%;
+    }
+}
+
+.service-video-list__slider-container {
+    margin-top: 36px;
+}
+
+.service-video-list {
+    padding-bottom: 80px;
+}
+
+.service-form-sec {
+    margin-bottom: 80px;
+}
