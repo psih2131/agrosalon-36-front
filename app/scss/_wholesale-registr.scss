@@ -89,5 +89,31 @@
     width: 557px;
     z-index: 2;
     left: calc(50% + 216px);
-    bottom: 10px;
+    // bottom: 10px;
+    top: 192px;
+}
+
+.wholesale-registr-sec__login-row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 728px;
+
+    .form-fields__inp {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .btnV1 {
+        margin-bottom: 0;
+        padding-left: 0;
+        width: 215px;
+
+        .btnV1__text {
+            width: calc(100% - 35px);
+            margin-right: 0;
+            text-align: center;
+        }
+    }
 }
