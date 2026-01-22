@@ -3,7 +3,7 @@
     background: $green2;
     position: relative;
     min-height: 450px;
-    padding: 50px;
+    padding: 50px 0;
 
     .sec-title {
         color: $white1;
@@ -242,4 +242,93 @@
         margin-bottom: 0;
         margin-top: 20px;
     }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .waranty-service-form-sec__img {
+        width: 408px;
+        left: calc(50% + 204px);
+        bottom: 23px;
+    }
+
+    .waranty-service-form-sec {
+        .container {
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .waranty-staps {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .waranty-service-form-sec {
+        padding: 40px 0;
+    }
+
+    .waranty-staps__counter {
+        margin-bottom: 30px;
+    }
+
+    .radio-label {
+        font-size: 16px;
+    }
+
+    .waranty-stap__radio-row {
+        justify-content: space-between;
+
+        .radio-item {
+            margin-right: 0;
+        }
+    }
+
+    .waranty-stap__fields-wrapper {
+        .form-input {
+            width: 100%;
+        }
+
+        .form-select {
+            width: 100%;
+        }
+
+        .form-download {
+            width: 100%;
+        }
+    }
+
+    .waranty-stap-btn-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+
+        .btnV1 {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .btnV1__text {
+            width: calc(100% - 35px);
+            margin-right: 0;
+            text-align: center;
+        }
+
+    }
+
+    .waranty-stap__back-btn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .waranty-stap--3__text {
+        font-size: 17px;
+    }
+
+    .waranty-service-form-sec__img {
+        display: none;
+    }
+
 }

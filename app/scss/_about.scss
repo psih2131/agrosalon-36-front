@@ -363,3 +363,261 @@
         min-height: 295px;
     }
 }
+
+
+@media only screen and (max-width: 1150px) {
+    .about-hero-sec {
+        padding-top: 175px;
+        padding-bottom: 70px;
+    }
+
+    .about-hero-sec__img {
+        width: 442px;
+        height: 290px;
+    }
+
+    .about-hero-sec__data {
+        width: 440px;
+    }
+
+    .about-hero-sec__row {
+        align-items: flex-end;
+    }
+
+    .about-hero-sec__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .adv-sec {
+        padding: 70px 0;
+    }
+
+    .adv-sec__title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .adv-element-x__title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .history-sec__text {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .history-products-slider__year {
+        font-size: 130px;
+        line-height: 100%;
+    }
+
+    .history-products-slider__text {
+        margin-top: 60px;
+
+    }
+
+    .history-products-slider {
+        width: 1536px;
+    }
+
+    .history-sec {
+        padding-bottom: 70px;
+    }
+
+    .mission-sec {
+        padding-bottom: 70px;
+    }
+
+    .mission-sec__row-text {
+        font-size: 22px;
+    }
+
+    .mission-sec__subtitle {
+        margin-top: 30px;
+        margin-bottom: 26px;
+    }
+
+    .brends-slider-sec {
+        padding: 70px 0;
+    }
+
+    .reviews-sec {
+        padding-bottom: 70px;
+    }
+
+    .reviews-sec__slider-1-wrapper {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .about-hero-sec {
+        padding-top: 210px;
+        padding-bottom: 60px;
+    }
+
+    .about-hero-sec__row {
+        flex-wrap: wrap;
+    }
+
+    .about-hero-sec__data {
+        width: 100%;
+    }
+
+    .about-hero-sec__img {
+        width: 100%;
+        height: 222px;
+    }
+
+    .about-hero-sec__row {
+        margin-top: 20px;
+    }
+
+    .about-hero-sec__title {
+        font-size: 30px;
+    }
+
+    .adv-sec {
+        padding: 60px 0;
+    }
+
+    .adv-sec__title {
+        font-size: 26px;
+        margin-bottom: 26px;
+        line-height: 38px;
+    }
+
+    .adv-sec__subtitle {
+        margin-bottom: 25px;
+    }
+
+    .adv-sec__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .adv-sec__col {
+        width: 100%;
+    }
+
+    .adv-element-x__title {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .adv-element__data {
+        padding-left: 20px;
+    }
+
+    .adv-element-x {
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+
+    .adv-sec__col {
+        &:first-child {
+            .adv-element-x {
+                &:last-child {
+                    padding-bottom: 40px;
+
+                    .adv-element-x__num-wrapper {
+                        &:before {
+                            height: 70px;
+                            width: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .history-sec__text {
+        margin-top: 26px;
+    }
+
+    .history-products-slider {
+        width: 1110px;
+    }
+
+    .history-sec {
+        padding-bottom: 60px;
+    }
+
+    .mission-sec__subtitle {
+        margin-top: 26px;
+        margin-bottom: 18px;
+    }
+
+    .mission-sec__row {
+        align-items: flex-start;
+    }
+
+    .mission-sec__img {
+        width: 75px;
+    }
+
+    .mission-sec__row-text {
+        width: calc(100% - 75px);
+        padding-left: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .mission-sec {
+        padding-bottom: 60px;
+    }
+
+    .brends-slider-sec {
+        padding: 60px 0;
+    }
+
+    .reviews-sec__slider-nav-btn-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+
+        .slider-nav-btn {
+            margin: 0 6px;
+        }
+    }
+
+    .revievs-swiper-button-prev {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+
+    .reviews-sec__slider-1-wrapper-mob {
+        margin-top: 26px;
+    }
+
+    .revievs-slider__element {
+        padding: 30px;
+    }
+
+    .revievs-slider__element-img {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .revievs-slider__element-body {
+        margin-top: 24px;
+        padding-right: 20px;
+    }
+
+    .revievs-slider__element-title {
+        font-size: 17px;
+    }
+
+    .revievs-slider__element-header-data {
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    .reviews-sec {
+        padding-bottom: 60px;
+    }
+}

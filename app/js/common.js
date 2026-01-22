@@ -21,6 +21,11 @@ $(function () {
         $(this).toggleClass('active')
     })
 
+    //mob catalog filtr open
+    $('.category-filtrs__header').on('click', function () {
+        $('.category-filtrs__body').slideToggle(500)
+        $(this).closest('.category-filtrs').toggleClass('active')
+    })
 
 });
 
@@ -132,8 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // },
         breakpoints: {
             // when window width is >= 320px
-            300: {
-                slidesPerView: 2,
+            100: {
+                slidesPerView: 3,
                 spaceBetween: 0,
             },
 
@@ -151,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    var swiperHistory = new Swiper(".revievs-slider-1", {
+    var swiperReview = new Swiper(".revievs-slider-1", {
         slidesPerView: 'auto',
         spaceBetween: 30,
 
@@ -169,15 +174,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // },
         breakpoints: {
             // when window width is >= 320px
-            // 300: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 0,
-            // },
+            100: {
+                enabled: false
+            },
 
-            // 910: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 0,
-            // },
+            910: {
+                spaceBetween: 20,
+            },
 
             1150: {
 
@@ -187,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    var swiperHistory = new Swiper(".revievs-slider-2", {
+    var swiperReview2 = new Swiper(".revievs-slider-2", {
         slidesPerView: 'auto',
         spaceBetween: 30,
 
@@ -207,15 +210,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // },
         breakpoints: {
             // when window width is >= 320px
-            // 300: {
-            //     slidesPerView: 2,
-            //     spaceBetween: 0,
-            // },
+            100: {
+                enabled: false
+            },
 
-            // 910: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 0,
-            // },
+            910: {
+                spaceBetween: 20,
+            },
 
             1150: {
 
@@ -226,6 +227,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+    var swiperReview2 = new Swiper(".revievs-slider-1-mob", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+
+        loop: true,              // 🔁 бесконечность
+        speed: 500,             // ⏱️ чем больше — тем медленнее движение
+
+        navigation: {
+            nextEl: ".revievs-swiper-button-next",
+            prevEl: ".revievs-swiper-button-prev",
+        },
+        breakpoints: {
+            // when window width is >= 320px
+            100: {
+                enabled: true,
+                slidesPerView: 1,
+            },
+
+            910: {
+                enabled: false
+            },
+
+            1150: {
+                enabled: false
+            }
+        }
+
+    });
+
+
+
     // мини-превью слайдер
     var swiperThumbs = new Swiper(".product-slider-controll", {
         spaceBetween: 10,
@@ -233,10 +265,9 @@ document.addEventListener("DOMContentLoaded", () => {
         loop: true,
         watchSlidesProgress: true, // важно для thumbs
         breakpoints: {
-            300: { slidesPerView: 1, spaceBetween: 5 },
-            767: { slidesPerView: 3, spaceBetween: 10 },
-            1220: { slidesPerView: 4, spaceBetween: 15 },
-            1540: { slidesPerView: 4, spaceBetween: 20 },
+            100: { slidesPerView: 3, spaceBetween: 15 },
+            910: { slidesPerView: 3, spaceBetween: 17 },
+            1150: { slidesPerView: 4, spaceBetween: 20 },
         }
     });
 

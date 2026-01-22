@@ -34,6 +34,11 @@
     height: 308px;
     border-radius: 20px;
     overflow: hidden;
+
+    .map-cusom {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .contact-claster__time-work {
@@ -185,4 +190,110 @@
 
 .form-sec--contact-page {
     margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .contacts-page-sec {
+        padding-top: 175px;
+        padding-bottom: 70px;
+    }
+
+    .contacts-page-sec__title {
+        font-size: 36px;
+        margin: 30px 0;
+    }
+
+    .contact-claster__map {
+        width: 600px;
+        height: 310px;
+    }
+
+    .contact-claster__data {
+        width: 288px;
+    }
+
+    .contact-claster__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .contact-claster__time-work {
+        font-size: 16px;
+    }
+
+    .about-ware-house {
+        margin-top: 70px;
+        align-items: flex-start;
+    }
+
+    .about-ware-house__img {
+        width: 442px;
+        height: 222px;
+    }
+
+    .about-ware-house__data {
+        width: 440px;
+    }
+
+    .about-ware-house__title {
+        margin-bottom: 16px;
+        font-size: 30px;
+    }
+
+    .form-sec--contact-page {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .contacts-page-sec {
+        padding-top: 210px;
+        padding-bottom: 60px;
+    }
+
+    .contacts-page-sec__title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        line-height: 100%;
+    }
+
+    .contacts-page-sec__claster {
+        flex-wrap: wrap;
+    }
+
+    .contact-claster__data {
+        order: 2;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .contact-claster__map {
+        width: 100%;
+        height: 310px;
+        border-radius: 20px;
+    }
+
+    .contact-claster__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-ware-house {
+        margin-top: 60px;
+    }
+
+    .about-ware-house__title {
+        margin-bottom: 26px;
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .about-ware-house__img {
+        width: 100%;
+    }
+
+    .form-sec--contact-page {
+        margin-bottom: 60px;
+    }
 }

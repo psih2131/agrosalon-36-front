@@ -38,6 +38,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: $green1;
+        transition: all ease 0.3s;
+    }
 }
 
 .brends-sec__element-img {
@@ -57,4 +63,55 @@
     font-size: 16px;
     margin-top: 4px;
     line-height: 130%;
+}
+
+@media only screen and (max-width: 1150px) {
+    .brends-sec {
+        padding: 175px 0 70px 0;
+    }
+
+    .brends-sec__title {
+        font-size: 36px;
+        margin: 30px 0;
+        line-height: 100%;
+    }
+
+    .brends-sec__element-title {
+        font-size: 18px;
+        margin-top: 16px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .brends-sec {
+        padding: 210px 0 60px 0;
+    }
+
+    .brends-sec__title {
+        margin: 20px 0 30px 0;
+        font-size: 30px;
+    }
+
+    .brends-sec__subtitle {
+        display: none;
+    }
+
+    .brends-sec__wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .brends-sec__element {
+        width: 100%;
+        margin: 30px 0 0 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .brends-sec__element-title {
+        font-size: 17px;
+    }
 }

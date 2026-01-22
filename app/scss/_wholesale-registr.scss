@@ -117,3 +117,87 @@
         }
     }
 }
+
+@media only screen and (max-width: 1150px) {
+    .wholesale-registr-sec {
+        padding-top: 175px;
+        padding-bottom: 70px;
+    }
+
+    .wholesale-registr-sec__title {
+        font-size: 36px;
+        line-height: 100%;
+        margin: 30px 0;
+    }
+
+    .form-fields {
+        width: 600px;
+    }
+
+    .wholesale-registr-sec__car-img {
+        width: 424px;
+        left: calc(50% + 193px);
+        top: 227px;
+    }
+
+    .wholesale-registr-sec__login-row {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .wholesale-registr-sec {
+        padding-top: 210px;
+        padding-bottom: 465px;
+    }
+
+    .wholesale-registr-sec__title {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .form-fields {
+        width: 100%;
+    }
+
+    .form-fields__inp {
+        width: 100%;
+    }
+
+    .form-fields__btn {
+        width: 100%;
+        margin-top: 4px;
+    }
+
+    .form-fields__confirm {
+        width: 100%;
+        margin-top: 19px;
+    }
+
+    .wholesale-registr-sec__link {
+        font-size: 16px;
+    }
+
+    .wholesale-registr-sec__login-row {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .wholesale-registr-sec__login-row .form-fields__inp {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .wholesale-registr-sec__login-row .btnV1 {
+        width: 100%;
+    }
+
+    .wholesale-registr-sec__car-img {
+        top: auto;
+        bottom: 20px;
+        width: 550px;
+        left: calc(50% - 275px + 82px);
+    }
+}

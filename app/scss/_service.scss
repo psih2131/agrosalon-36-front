@@ -224,3 +224,230 @@
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 1150px) {
+    .hero-service-sec__img {
+        width: 727px;
+        bottom: -47px;
+        left: calc(50% - 10px);
+    }
+
+    .our-service-list {
+        padding: 70px 0;
+    }
+
+    .our-service-list__element-text {
+        font-size: 18px;
+    }
+
+    .our-service-list__title {
+        margin-bottom: 30px;
+    }
+
+    .service-banner-sec__title {
+        margin-bottom: 30px;
+    }
+
+    .service-banner-sec__data {
+        width: 610px;
+    }
+
+    .service-banner-sec__img {
+
+        width: 434px;
+
+        left: calc(50% + 185px);
+
+        top: 20px;
+    }
+
+    .ware-house-sec {
+        padding: 70px 0;
+    }
+
+    .map-services-sec__title {
+        margin-bottom: 30px;
+    }
+
+    .consult-service-sec {
+        padding: 70px 0;
+    }
+
+    .consult-service-sec .sec-title {
+        max-width: 540px;
+        margin-bottom: 30px;
+        line-height: 40px;
+    }
+
+    .consult-service-sec__img {
+        width: 442px;
+    }
+
+    .consult-service-sec__data {
+        width: 440px;
+    }
+
+    .service-video-list {
+        padding-bottom: 70px;
+    }
+
+    .service-video-list__slider-container {
+        margin-top: 30px;
+    }
+
+    .service-form-sec {
+        margin-bottom: 70px;
+    }
+}
+
+@media only screen and (max-width: 910px) {
+    .hero-service-sec {
+        padding-bottom: 350px;
+    }
+
+    .hero-service-sec__img {
+        width: 536px;
+        bottom: -34px;
+        left: calc(50% - 210px);
+    }
+
+    .our-service-list {
+        padding: 60px 0;
+
+        .container {
+            flex-wrap: wrap;
+        }
+    }
+
+    .our-service-list__about {
+        width: 100%;
+        padding: 30px;
+        height: auto;
+        padding-bottom: 150px;
+    }
+
+    .our-service-list__title {
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+
+    .our-service-list__about-bg-logo {
+        left: 40px;
+    }
+
+    .our-service-list__list-wrapper {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .service-banner-sec__data {
+        width: 100%;
+    }
+
+    .service-banner-sec__title {
+        font-size: 26px;
+        margin-bottom: 26px;
+    }
+
+    .service-banner-sec__wrapper {
+        padding: 0;
+        padding-top: 30px;
+        padding-bottom: 192px;
+    }
+
+    .service-banner-sec__img {
+        width: 345px;
+        left: calc(50% - 88px);
+        top: auto;
+        bottom: -56px;
+    }
+
+    .ware-house-sec {
+        padding: 60px 0;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sec-header-row {
+            display: contents;
+        }
+
+        .sec-title {
+            order: 1;
+        }
+
+        .btnV3 {
+            order: 3;
+        }
+    }
+
+    .ware-house-sec__wrapper {
+        order: 2;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ware-house-sec__element {
+        width: 100%;
+        margin: 0;
+        margin-top: 16px;
+    }
+
+    .our-service-list__element-text {
+        font-size: 17px;
+    }
+
+    .map-services-sec {
+        padding-bottom: 60px;
+    }
+
+    .map-services-sec__title {
+        font-size: 26px;
+        margin-bottom: 26px;
+    }
+
+    .consult-service-sec {
+        padding: 60px 0;
+    }
+
+    .consult-service-sec .sec-title {
+        font-size: 26px;
+        line-height: 130%;
+        margin-bottom: 26px;
+    }
+
+    .consult-service-sec__row {
+        flex-wrap: wrap;
+    }
+
+    .consult-service-sec__img {
+        width: 100%;
+    }
+
+    .service-video-list {
+        padding-bottom: 60px;
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sec-header-row {
+            display: contents;
+        }
+
+        .product-tab__video-element-preview-wrapper {
+            height: 225px;
+        }
+    }
+
+    .service-video-list__slider-container {
+        width: 100%;
+    }
+
+    .service-form-sec {
+        margin-bottom: 60px;
+    }
+}

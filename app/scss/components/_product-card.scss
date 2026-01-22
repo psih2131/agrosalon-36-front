@@ -141,6 +141,7 @@
 .product-card__info-status {
     display: flex;
     align-items: center;
+    margin-right: 16px;
 
 }
 
@@ -154,6 +155,12 @@
 .product-card__info-status-text {
     font-size: 12px;
     margin-left: 5px;
+}
+
+.product-card__info-row-left-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .product-card__info-article {
@@ -217,6 +224,14 @@
         font-size: 18px;
         margin-top: 15px;
         margin-bottom: 18px;
+    }
+
+    .product-card__info-row {
+        align-items: flex-start;
+    }
+
+    .product-card__info-article {
+        margin-top: 5px;
     }
 }
 
