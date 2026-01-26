@@ -348,7 +348,7 @@
 
                         <div class="order-staps-sec__row-staps-line"></div>
 
-                        <div class="order-staps-sec__stap">
+                        <div class="order-staps-sec__stap active">
                             <div class="order-staps-sec__stap-circle">
                                 <div class="order-staps-sec__stap-circle-wrapper">03</div>
                             </div>
@@ -373,14 +373,14 @@
                 </div>
             </section>
 
-            <section class="order-delevery-sec">
+            <section class="order-delevery-sec order-pay-sec">
                 <div class="container">
 
-                    <h2 class="order-delevery-sec__title">Доставка</h2>
+                    <h2 class="order-delevery-sec__title">Оплата</h2>
                     <div class="order-delevery-sec__wrapper">
 
                         <div class="order-delevery-sec__list-container">
-                            <p class="order-delevery-sec__list-text">Выберите способ доставки</p>
+                            <p class="order-delevery-sec__list-text">Выберите способ оплаты</p>
                             <ul class="order-delevery-sec__list">
 
                                 <li class="order-delevery-sec__list-element">
@@ -390,13 +390,12 @@
                                                 value="indigo" checked>
 
                                             <div class="order-delevery-sec-radio-item-element__img-wrappr">
-                                                <img src="img/_src/delivery-1.png" alt=""
+                                                <img src="img/_src/pay-1.png" alt=""
                                                     class="order-delevery-sec-radio-item-element__img">
                                             </div>
                                             <div class="order-delevery-sec-radio-item-element__data">
-                                                <p class="order-delevery-sec-radio-item-element__data-title">Доставка
-                                                    курьером</p>
-                                                <p class="order-delevery-sec-radio-item-element__data-price">230 ₽ </p>
+                                                <p class="order-delevery-sec-radio-item-element__data-title">Наличными
+                                                    курьеру</p>
                                             </div>
                                         </label>
                                     </div>
@@ -409,12 +408,12 @@
                                                 value="indigo" checked>
 
                                             <div class="order-delevery-sec-radio-item-element__img-wrappr">
-                                                <img src="img/_src/delivery-2.png" alt=""
+                                                <img src="img/_src/pay-2.png" alt=""
                                                     class="order-delevery-sec-radio-item-element__img">
                                             </div>
                                             <div class="order-delevery-sec-radio-item-element__data">
-                                                <p class="order-delevery-sec-radio-item-element__data-title">СДЭК</p>
-                                                <p class="order-delevery-sec-radio-item-element__data-price">130 ₽ </p>
+                                                <p class="order-delevery-sec-radio-item-element__data-title">Наложенный
+                                                    платеж</p>
                                             </div>
                                         </label>
                                     </div>
@@ -427,55 +426,18 @@
                                                 value="indigo" checked>
 
                                             <div class="order-delevery-sec-radio-item-element__img-wrappr">
-                                                <img src="img/_src/delivery-3.png" alt=""
+                                                <img src="img/_src/pay-3.png" alt=""
                                                     class="order-delevery-sec-radio-item-element__img">
                                             </div>
                                             <div class="order-delevery-sec-radio-item-element__data">
-                                                <p class="order-delevery-sec-radio-item-element__data-title">Самовывоз
+                                                <p class="order-delevery-sec-radio-item-element__data-title">Сбербанк
                                                 </p>
-                                                <p class="order-delevery-sec-radio-item-element__data-price">0 ₽ </p>
                                             </div>
                                         </label>
                                     </div>
                                 </li>
 
-                                <li class="order-delevery-sec__list-element">
-                                    <div class="order-delevery-sec-radio-item-element">
-                                        <label for="color-4" class="radio-label">
-                                            <input type="radio" class="radio-input" id="color-4" name="data-set-1"
-                                                value="indigo" checked>
 
-                                            <div class="order-delevery-sec-radio-item-element__img-wrappr">
-                                                <img src="img/_src/delivery-4.png" alt=""
-                                                    class="order-delevery-sec-radio-item-element__img">
-                                            </div>
-                                            <div class="order-delevery-sec-radio-item-element__data">
-                                                <p class="order-delevery-sec-radio-item-element__data-title">Почта
-                                                    России (Воздушный транспорт)</p>
-                                                <p class="order-delevery-sec-radio-item-element__data-price">530 ₽ </p>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </li>
-
-                                <li class="order-delevery-sec__list-element">
-                                    <div class="order-delevery-sec-radio-item-element">
-                                        <label for="color-5" class="radio-label">
-                                            <input type="radio" class="radio-input" id="color-5" name="data-set-1"
-                                                value="indigo" checked>
-
-                                            <div class="order-delevery-sec-radio-item-element__img-wrappr">
-                                                <img src="img/_src/delivery-4.png" alt=""
-                                                    class="order-delevery-sec-radio-item-element__img">
-                                            </div>
-                                            <div class="order-delevery-sec-radio-item-element__data">
-                                                <p class="order-delevery-sec-radio-item-element__data-title">Почта
-                                                    России (Наземный транспорт)</p>
-                                                <p class="order-delevery-sec-radio-item-element__data-price">630 ₽ </p>
-                                            </div>
-                                        </label>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                         <div class="order-delevery-sec__dop-features-wrapper">
@@ -483,18 +445,15 @@
                             <div class="order-dop-features-card">
                                 <div class="order-dop-features-card__header">
                                     <div class="order-dop-features-card__img-wrapper">
-                                        <img src="img/_src/dop-features-1.png" alt=""
-                                            class="order-dop-features-card__img">
+                                        <img src="img/_src/pay-1.png" alt="" class="order-dop-features-card__img">
                                     </div>
-                                    <p class="order-dop-features-card__title">Доставка курьером</p>
+                                    <p class="order-dop-features-card__title">Наличными курьеру</p>
                                 </div>
-                                <p class="order-dop-features-card__text">Доставка осуществляется в течении дня<br>
-                                    в удобное для вас время </p>
+                                <p class="order-dop-features-card__text">Оплата производится наличными деньгами, в
+                                    момент получения заказа.
+                                    Подтверждением вашей оплаты является фискальный кассовый чек, вручаемый во время
+                                    получения и оплаты заказа. </p>
 
-                                <div class="order-dop-features-card__price-row">
-                                    <p class="order-dop-features-card__price-name">Стоимость: </p>
-                                    <p class="order-dop-features-card__price-value">230 ₽ </p>
-                                </div>
                             </div>
 
                         </div>
