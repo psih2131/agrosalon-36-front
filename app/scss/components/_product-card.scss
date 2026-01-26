@@ -250,4 +250,17 @@
     .cart-btn__img {
         width: 20px;
     }
+
+    .product-card__info-row {
+        align-items: center;
+        padding-top: 13px;
+    }
+
+    .product-card__info-article {
+        margin-top: 0;
+    }
+
+    .product-card__controls {
+        justify-content: space-between;
+    }
 }

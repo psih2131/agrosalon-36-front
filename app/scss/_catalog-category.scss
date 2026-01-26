@@ -409,4 +409,22 @@
     .catalog-category-sec .catalog-page-sec__header {
         display: block;
     }
+
+    .catalog-category-sec__products-wrapper {
+        .cart-btn {
+            width: auto;
+            margin: 0;
+        }
+
+        .btnV1 {
+            width: 180px;
+            margin: 0;
+        }
+
+        .btnV1__text {
+            padding-left: 10px;
+        }
+    }
+
+
 }
