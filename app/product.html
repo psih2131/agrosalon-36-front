@@ -348,7 +348,7 @@
                                     </svg>
                                     В корзину
                                 </button>
-                                <a href="" class="btnV1">
+                                <button class="btnV1 air-open-btn" data-popup-current="form-order">
                                     <span class="btnV1__text">Быстрый заказ</span>
                                     <span class="btnV1__icon-wrapper">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -357,7 +357,7 @@
                                                 stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </span>
-                                </a>
+                                </button>
 
                                 <p class="hero-product-sec__price">899 400 ₽ </p>
                             </div>
@@ -1393,6 +1393,48 @@
                 </div>
             </div>
         </footer>
+
+        <div class="popup-air form-order" data-air="form-order">
+            <div class="form-order__wrapper">
+                <p class="form-order__title">Оставить заявку</p>
+                <p class="form-order__subtitle">Заполните форму — мы свяжемся с вами, ответим на вопросы и поможем с
+                    выбором техники.</p>
+                <p class="form-order__text">Трактор Weituo 2204 с фронтальным погрузчиком</p>
+
+                <div class="form-order__form">
+                    <div class="form-fields__inp form-order__inp form-order__inp--long">
+                        <input type="text" placeholder="ФИО *">
+                    </div>
+
+                    <div class="form-fields__inp form-order__inp">
+                        <input type="text" class="tel" placeholder="Ваш телефон *">
+                    </div>
+                    <div class="form-fields__inp form-order__inp">
+                        <input type="text" placeholder="Ваш E-mail *">
+                    </div>
+                    <div class="form-fields__inp form-order__inp--long">
+                        <input type="text" placeholder="Комментарий к заказу">
+                    </div>
+
+
+                    <div class="form-order__row">
+                        <div class="form__confirm-row form-fields__confirm form-order_confirm">
+                            <label class="container-checkbox">
+                                Я согласен на получение новостных
+                                и рекламных материалов
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="form-fields__btn">
+                            <button>Оставить заявку</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
 
