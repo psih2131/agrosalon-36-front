@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="header__store-control-row">
-                            <div class="store-control-element">
+                            <div class="store-control-element air-open-btn" data-popup-current="login">
                                 <div class="store-control-element__icon-wrapper">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -1432,6 +1432,89 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-air auth-popup auth-popup auth-popup--login" data-air="login">
+            <div class="auth-popup__wrapper">
+                <p class="auth-popup__title">Войти</p>
+
+                <div class="auth-popup__form-wrapper">
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="text" placeholder="Ваш E-mail *">
+                    </div>
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="password" placeholder="Пароль *">
+                    </div>
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="password" placeholder="Подтвердите пароль *">
+                    </div>
+
+                    <p class="auth-popup__text">Нет аккаунта? <span class="air-open-btn"
+                            data-popup-current="registr">Регистрация</span></p>
+
+                    <div class="auth-popup__controll-btn-row">
+                        <div class="form__confirm-row form-fields__confirm form-order_confirm">
+                            <label class="container-checkbox">
+                                Я согласен на получение новостных
+                                и рекламных материалов
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="form-fields__btn">
+                            <button>Войти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup-air auth-popup auth-popup auth-popup--registr" data-air="registr">
+            <div class="auth-popup__wrapper">
+                <p class="auth-popup__title">Регистрация</p>
+
+                <div class="auth-popup__form-wrapper">
+
+
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="text" placeholder="ФИО *">
+                    </div>
+
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="text" class="tel" placeholder="Ваш телефон *">
+                    </div>
+
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="text" placeholder="Ваш E-mail *">
+                    </div>
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="password" placeholder="Пароль *">
+                    </div>
+                    <div class="form-fields__inp auth-popup__inp">
+                        <input type="password" placeholder="Подтвердите пароль *">
+                    </div>
+
+                    <p class="auth-popup__text">Уже есть аккаунт? <span class="air-open-btn"
+                            data-popup-current="login">Войти</span></p>
+
+                    <div class="auth-popup__controll-btn-row">
+                        <div class="form__confirm-row form-fields__confirm form-order_confirm">
+                            <label class="container-checkbox">
+                                Я согласен на получение новостных
+                                и рекламных материалов
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <div class="form-fields__btn">
+                            <button>Оставить заявку</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
