@@ -93,9 +93,17 @@
     font-weight: 500;
     border-radius: 100px;
     background: $white1;
+    transition: all ease 0.3s;
 
     &:last-child {
         margin-right: 0;
+    }
+
+    &:hover {
+        background: $green1;
+        color: $white1;
+        border: solid 1px $green1;
+        transition: all ease 0.3s;
     }
 }
 
