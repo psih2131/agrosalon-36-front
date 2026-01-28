@@ -301,6 +301,11 @@
             width: 100%;
             margin-top: 10px;
         }
+
+        .order-btn-product {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
 }
@@ -423,6 +428,10 @@
 
         .btnV1__text {
             padding-left: 10px;
+        }
+
+        .order-btn-product {
+            width: auto;
         }
     }
 

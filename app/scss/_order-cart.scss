@@ -509,6 +509,11 @@
     border: solid 1px rgba(34, 40, 43, 0.2);
     background: #F7F7F7;
     padding: 40px;
+    display: none;
+
+    &.active {
+        display: block;
+    }
 }
 
 .order-dop-features-card__header {

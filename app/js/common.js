@@ -544,6 +544,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    function deliveryPayChangeType() {
+        const inputs = document.querySelectorAll(
+            '.order-delevery-sec__list-element .radio-input'
+        )
+        const cards = document.querySelectorAll('.order-dop-features-card')
+
+        function updateActiveCard() {
+            cards.forEach(card => card.classList.remove('active'))
+
+            inputs.forEach((input, index) => {
+                if (input.checked) {
+                    cards[index]?.classList.add('active')
+                }
+            })
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('change', updateActiveCard)
+        })
+
+        // если при загрузке уже есть checked
+        updateActiveCard()
+    }
+
+    deliveryPayChangeType()
 
 
     function popupAir() {
@@ -607,12 +632,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     currentAirPopup.classList.remove('air-popup_active');
                     closeAirConteiner()
                 })
-
-
-
-
             }
-
 
 
             function openAirConteiner() {
@@ -671,187 +691,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     popupAir()
-
-
-
-
-    //popup script
-
-    // <div class="popup-air galery-conteiner" data-air="test">
-    // 		<div class="galery-popup">
-    // 		</div>
-    // 	</div>
-    // 	<button class="air-open-btn" data-popup-current="galery">galery</button>
-    // 	<button class="air-open-btn" data-popup-current="test">test</button>
-
-
-
-    //popup
-    // function popupAir() {
-    //     const footerElement = document.querySelector('footer');
-    //     if (!footerElement) {
-    //         alert('dont find teg footer')
-    //     }
-    //     else {
-    //         let airElements = document.querySelectorAll('.popup-air');
-    //         if (airElements.length > 0) {
-    //             let airBtnOpen = document.querySelectorAll('.air-open-btn');
-    //             createAirPopups()
-
-    //             for (let i = 0; i < airBtnOpen.length; i++) {
-    //                 airBtnOpen[i].onclick = openAirPopup
-    //             }
-    //         }
-    //         else {
-    //             return
-    //         }
-
-    //         function createAirPopups() {
-    //             let airConteiner = document.createElement("div");
-    //             airConteiner.classList.add('air-conteiner');
-
-    //             for (let i = 0; i < airElements.length; i++) {
-    //                 let airCloseIcon = document.createElement("div");
-    //                 airCloseIcon.classList.add('air-close');
-    //                 airElements[i].appendChild(airCloseIcon)
-    //                 airConteiner.appendChild(airElements[i])
-
-    //             }
-    //             footerElement.after(airConteiner)
-    //         }
-
-    //         function openAirPopup() {
-    //             let currentAirPopupBtn = this.getAttribute('data-popup-current');
-    //             let allPopups = document.querySelectorAll('.popup-air');
-    //             let currentAirPopup = document.querySelector(`.popup-air[data-air="${currentAirPopupBtn}"]`)
-    //             let closeAirIcon = currentAirPopup.querySelector('.air-close');
-    //             let popupWrapper = document.querySelector('.air-conteiner')
-    //             closeAllAirPopups(allPopups);
-    //             openAirConteiner();
-    //             currentAirPopup.classList.add('air-popup_active');
-
-    //             closeAirIcon.addEventListener('click', function () {
-    //                 currentAirPopup.classList.remove('air-popup_active');
-    //                 closeAirConteiner()
-    //             })
-
-
-    //             document.addEventListener('keydown', function (event) {
-    //                 // Проверяем, была ли нажата клавиша ESC
-    //                 if (event.key === 'Escape' || event.keyCode === 27) {
-    //                     currentAirPopup.classList.remove('air-popup_active');
-    //                     closeAirConteiner()
-    //                 }
-    //             });
-
-
-    //             popupWrapper.addEventListener('click', handleClickOutside);
-
-
-
-
-    //             // Функция, обрабатывающая клики
-    //             function handleClickOutside(event) {
-    //                 const block = currentAirPopup;
-    //                 if (!block.contains(event.target)) {
-    //                     currentAirPopup.classList.remove('air-popup_active');
-    //                     closeAirConteiner()
-
-    //                     popupWrapper.removeEventListener('click', handleClickOutside);
-    //                 }
-    //             }
-
-    //         }
-
-
-    //         function openAirPopupForForm(curretnDonePopup) {
-    //             let allPopups = document.querySelectorAll('.popup-air');
-    //             let currentAirPopup = document.querySelector(`.popup-air[data-air="${curretnDonePopup}"]`)
-    //             let closeAirIcon = currentAirPopup.querySelector('.air-close');
-    //             let popupWrapper = document.querySelector('.air-conteiner')
-
-    //             closeAllAirPopups(allPopups);
-    //             openAirConteiner();
-    //             currentAirPopup.classList.add('air-popup_active');
-
-    //             closeAirIcon.addEventListener('click', function () {
-    //                 currentAirPopup.classList.remove('air-popup_active');
-    //                 closeAirConteiner()
-    //             })
-
-    //             document.addEventListener('keydown', function (event) {
-    //                 // Проверяем, была ли нажата клавиша ESC
-    //                 if (event.key === 'Escape' || event.keyCode === 27) {
-    //                     currentAirPopup.classList.remove('air-popup_active');
-    //                     closeAirConteiner()
-    //                 }
-    //             });
-
-    //             popupWrapper.addEventListener('click', handleClickOutside);
-
-
-
-
-    //             // Функция, обрабатывающая клики
-    //             function handleClickOutside(event) {
-    //                 const block = currentAirPopup;
-    //                 if (!block.contains(event.target)) {
-    //                     currentAirPopup.classList.remove('air-popup_active');
-    //                     closeAirConteiner()
-
-    //                     popupWrapper.removeEventListener('click', handleClickOutside);
-    //                 }
-    //             }
-    //         }
-
-
-    //         function openAirConteiner() {
-    //             let airConteier = document.querySelector('.air-conteiner');
-    //             airConteier.classList.add('air-conteiner_active');
-    //         }
-
-    //         function closeAllAirPopups(allPopups) {
-    //             for (let i = 0; i < allPopups.length; i++) {
-    //                 allPopups[i].classList.remove('air-popup_active');
-    //             }
-    //         }
-    //         function closeAirConteiner() {
-    //             let airConteier = document.querySelector('.air-conteiner');
-    //             airConteier.classList.remove('air-conteiner_active');
-    //         }
-
-    //         function sendFormDone() {
-    //             let allPopups = document.querySelectorAll('.popup-air');
-    //             let curretnDonePopup = 'formSend';
-    //             closeAllAirPopups(allPopups)
-    //             openAirPopupForForm(curretnDonePopup);
-    //             setTimeout(function () {
-    //                 closeAllAirPopups(allPopups)
-    //                 setTimeout(closeAirConteiner, 1000);
-
-    //             }, 3000);
-    //         }
-
-    //         //Успешная отправка формы
-    //         document.addEventListener('wpcf7mailsent', function (event) {
-    //             if ('133' == event.detail.contactFormId) {
-    //                 sendFormDone();
-    //             }
-
-    //             if ('134' == event.detail.contactFormId) {
-    //                 sendFormDone();
-    //             }
-
-    //             if ('210' == event.detail.contactFormId) {
-    //                 sendFormDone();
-    //             }
-
-
-    //         }, false);
-    //     }
-    // }
-    // popupAir()
-
 
 
 
